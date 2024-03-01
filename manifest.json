@@ -1,0 +1,35 @@
+{
+    "name": "Bluey Randomiser",
+    "version": "0.0.1",
+    "description": "Plays Bluey episodes on Disney+ in a random order",
+    "permissions": [
+        "tabs",
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://*.disneyplus.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+            ],
+            "matches": [
+                "https://*.disneyplus.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "assets/icon.png",
+            "24": "assets/icon.png",
+            "32": "assets/icon.png"
+        },
+        "default_title": "Bluey Randomiser",
+        "default_popup": "plugin.html"
+    },
+    "manifest_version": 3
+}
